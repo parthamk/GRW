@@ -1,4 +1,4 @@
-# 📦 WORDPRESS-RENDER-GITHUB DEMO - COMPLETE PACKAGE
+# 📦 GRW - COMPLETE PACKAGE
 
 ## Everything You Need To Deploy WordPress on Render
 
@@ -7,6 +7,7 @@
 ## 📚 FILES INCLUDED IN THIS PACKAGE
 
 ### 1. **wordpress-render-demo.md** ⭐ START HERE
+
 - Complete setup instructions
 - All configuration files explained
 - Validation scripts included
@@ -14,6 +15,7 @@
 - **Read this first!**
 
 ### 2. **STEP_BY_STEP_GUIDE.txt** ⭐ FOLLOW THIS STEP-BY-STEP
+
 - 21 exact steps from start to finish
 - Copy-paste ready commands
 - Phase 1: Local Setup (10 steps)
@@ -23,6 +25,7 @@
 - **Use this as your checklist!**
 
 ### 3. **wordpress-demo-files.md** ⭐ COPY FILES FROM HERE
+
 - All complete file contents
 - Dockerfile
 - render.yaml
@@ -33,6 +36,7 @@
 - **Copy-paste each file into your project**
 
 ### 4. **QUICK_REFERENCE.md** ⭐ BOOKMARK THIS
+
 - Emergency commands
 - Quick troubleshooting
 - File locations and purposes
@@ -43,6 +47,7 @@
 - **Keep this open while deploying**
 
 ### 5. **validate-setup.sh**
+
 - Bash script for validation
 - Checks all files exist
 - Validates YAML syntax
@@ -56,8 +61,8 @@
 
 ```bash
 # Clone demo repo
-git clone https://github.com/YOUR-USERNAME/wordpress-render-demo.git
-cd wordpress-render-demo
+git clone https://github.com/parthamk/GRW.git
+cd GRW
 
 # Copy all files from wordpress-demo-files.md (see files 1-5 above)
 
@@ -81,17 +86,20 @@ git push origin main
 ## 📖 RECOMMENDED READING ORDER
 
 ### For First-Time Users:
+
 1. **README.md** (this file) - Overview
 2. **wordpress-render-demo.md** - Learn the concepts
 3. **STEP_BY_STEP_GUIDE.txt** - Follow exact steps
 4. **QUICK_REFERENCE.md** - Bookmark for later
 
 ### For Experienced Developers:
+
 1. **wordpress-demo-files.md** - Get the files
 2. **QUICK_START** (above) - Follow these commands
 3. **QUICK_REFERENCE.md** - Use as reference
 
 ### For Troubleshooting:
+
 1. **QUICK_REFERENCE.md** - Check common issues
 2. **wordpress-render-demo.md** - See detailed solutions
 3. **STEP_BY_STEP_GUIDE.txt** - Review exact steps
@@ -116,6 +124,7 @@ git push origin main
 ## 📋 DEPLOYMENT CHECKLIST
 
 Before you start, you'll need:
+
 - [ ] GitHub account (free)
 - [ ] Render account (free)
 - [ ] Git installed locally
@@ -129,6 +138,7 @@ Before you start, you'll need:
 ## 🎯 THE THREE PHASES
 
 ### Phase 1: Local Setup (15 minutes)
+
 - Create project structure
 - Copy all configuration files
 - Validate everything works
@@ -137,6 +147,7 @@ Before you start, you'll need:
 **Files Used:** Dockerfile, render.yaml, deploy.yml, .gitignore, README.md
 
 ### Phase 2: Render Deployment (15 minutes)
+
 - Create Render account
 - Deploy using Blueprint
 - Initialize MySQL database
@@ -146,6 +157,7 @@ Before you start, you'll need:
 **No coding required, just configuration**
 
 ### Phase 3: Auto-Deployment Setup (5 minutes)
+
 - Get Render deploy hook URL
 - Add GitHub secret
 - Test auto-deployment
@@ -158,6 +170,7 @@ Before you start, you'll need:
 ## 🏗️ WHAT EACH FILE DOES
 
 ### Dockerfile
+
 - Defines WordPress Docker image
 - Based on official WordPress image
 - Installs MySQL client
@@ -167,6 +180,7 @@ Before you start, you'll need:
 **Why?** Makes WordPress reproducible and scalable
 
 ### render.yaml
+
 - Infrastructure-as-Code configuration
 - Defines 2 services:
   1. WordPress web service (Docker)
@@ -178,6 +192,7 @@ Before you start, you'll need:
 **Why?** All infrastructure is version-controlled and reproducible
 
 ### .github/workflows/deploy.yml
+
 - GitHub Actions workflow
 - Triggers on push to main branch
 - Validates files exist
@@ -187,6 +202,7 @@ Before you start, you'll need:
 **Why?** Deployments are automatic, fast, and reliable
 
 ### .gitignore
+
 - Tells Git which files to ignore
 - Excludes WordPress core files
 - Excludes environment files
@@ -195,6 +211,7 @@ Before you start, you'll need:
 **Why?** Only version-control what's necessary
 
 ### README.md
+
 - Project documentation
 - Quick start guide
 - Troubleshooting tips
@@ -208,30 +225,35 @@ Before you start, you'll need:
 ## 💡 KEY CONCEPTS YOU'LL LEARN
 
 ### Docker
+
 - Containerization
 - Image building
 - Container orchestration
 - Docker in production
 
 ### Infrastructure-as-Code
+
 - YAML configuration
 - Service definitions
 - Environment management
 - Reproducible deployments
 
 ### CI/CD
+
 - Continuous Integration
 - Continuous Deployment
 - Automated workflows
 - Webhook triggers
 
 ### Git & GitHub
+
 - Version control best practices
 - Branch management
 - Repository structure
 - Workflow automation
 
 ### DevOps
+
 - Production deployment
 - Database management
 - Persistent storage
@@ -241,32 +263,35 @@ Before you start, you'll need:
 
 ## 🔧 TECHNOLOGY STACK
 
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| Container | Docker | Run WordPress in isolated environment |
-| Web Server | Apache | Serve WordPress HTTP requests |
-| Database | MySQL | Store WordPress content |
-| Platform | Render | Cloud hosting with auto-scaling |
-| CI/CD | GitHub Actions | Automatic deployment trigger |
-| Code Repository | GitHub | Version control and code storage |
-| Base Image | WordPress:6.3 | Official WordPress Docker image |
+| Component       | Technology     | Purpose                               |
+| --------------- | -------------- | ------------------------------------- |
+| Container       | Docker         | Run WordPress in isolated environment |
+| Web Server      | Apache         | Serve WordPress HTTP requests         |
+| Database        | MySQL          | Store WordPress content               |
+| Platform        | Render         | Cloud hosting with auto-scaling       |
+| CI/CD           | GitHub Actions | Automatic deployment trigger          |
+| Code Repository | GitHub         | Version control and code storage      |
+| Base Image      | WordPress:6.3  | Official WordPress Docker image       |
 
 ---
 
 ## 💰 COST ANALYSIS
 
 ### Free Tier (Good for Learning/Development)
+
 - Render: Free 750 hours/month (~$0/month for part-time)
 - GitHub: Free (includes Actions)
 - Total: **$0/month**
 
 ### Production Tier (Recommended)
+
 - Render web service: ~$12/month
 - Render database: ~$15/month
 - GitHub: Free
 - Total: **~$27/month**
 
 ### With Custom Domain
+
 - Domain: ~$10-15/year (not required)
 - SSL/TLS: Free (auto on Render)
 - Total: **~$27/month + $1/month for domain**
@@ -307,6 +332,7 @@ Monthly: Maintenance
 After completing this project, you'll have:
 
 **For Your Resume:**
+
 - ✅ Full-stack deployment project
 - ✅ Docker/containerization experience
 - ✅ CI/CD pipeline setup
@@ -317,6 +343,7 @@ After completing this project, you'll have:
 - ✅ Database management
 
 **For Your Portfolio:**
+
 - ✅ Live running website
 - ✅ GitHub repo with code
 - ✅ Documentation
@@ -324,6 +351,7 @@ After completing this project, you'll have:
 - ✅ Automated deployment system
 
 **Interview Talking Points:**
+
 - "I deployed WordPress using Docker on Render"
 - "I set up CI/CD with GitHub Actions"
 - "I implemented Infrastructure-as-Code"
@@ -336,22 +364,23 @@ After completing this project, you'll have:
 ### If You Get Stuck:
 
 1. **Check QUICK_REFERENCE.md**
+
    - Most common issues have quick fixes
    - Emergency commands listed
-
 2. **Review STEP_BY_STEP_GUIDE.txt**
+
    - Follow exact steps again
    - Check expected outputs
-
 3. **Check Render Logs**
+
    - Dashboard → Services → Logs tab
    - Most errors explained here
-
 4. **Search Stack Overflow**
+
    - Tag with: wordpress, render, docker
    - Usually someone had same problem
-
 5. **Visit Support Resources**
+
    - Render: https://render.com/docs
    - WordPress: https://wordpress.org/support/
    - Docker: https://docs.docker.com/
@@ -361,6 +390,7 @@ After completing this project, you'll have:
 ## 🔒 SECURITY NOTES
 
 ### What's Secure:
+
 ✅ SSL/TLS encryption (free on Render)
 ✅ Database password not in code
 ✅ Secrets stored in GitHub (encrypted)
@@ -368,6 +398,7 @@ After completing this project, you'll have:
 ✅ Persistent disk encrypted by Render
 
 ### What You Should Do:
+
 1. Use strong database password (20+ chars)
 2. Update WordPress regularly
 3. Use strong admin password (20+ chars)
@@ -402,30 +433,31 @@ You know you've succeeded when:
 ## 🎯 NEXT STEPS AFTER COMPLETION
 
 1. **Add Custom Theme**
+
    - Create in wp-content/themes/
    - Version control in GitHub
    - Auto-deploys on push
-
 2. **Add Custom Plugin**
+
    - Create in wp-content/plugins/
    - Test locally first
    - Push to deploy
-
 3. **Configure Custom Domain**
+
    - Render Dashboard → Settings
    - Point DNS to Render
    - Update WordPress URL
-
 4. **Enable Caching**
+
    - Install WP Super Cache
    - Improves performance dramatically
-
 5. **Setup Monitoring**
+
    - Install Jetpack
    - Enable backups
    - Monitor uptime
-
 6. **Learn More DevOps**
+
    - Setup staging environment
    - Add automated testing
    - Implement CDN
@@ -492,19 +524,19 @@ You know you've succeeded when:
 
 ## ⏰ TIME BREAKDOWN
 
-| Phase | Task | Time |
-|-------|------|------|
-| 1 | Create repo | 2 min |
-| 1 | Copy files | 5 min |
-| 1 | Validate | 2 min |
-| 1 | Push to GitHub | 2 min |
-| 2 | Create Render account | 2 min |
-| 2 | Deploy blueprint | 10 min |
-| 2 | Set environment variables | 2 min |
-| 2 | WordPress setup | 5 min |
-| 3 | Setup deploy hook | 3 min |
-| 3 | Test deployment | 3 min |
-| **TOTAL** | **All steps** | **~37 min** |
+| Phase           | Task                      | Time              |
+| --------------- | ------------------------- | ----------------- |
+| 1               | Create repo               | 2 min             |
+| 1               | Copy files                | 5 min             |
+| 1               | Validate                  | 2 min             |
+| 1               | Push to GitHub            | 2 min             |
+| 2               | Create Render account     | 2 min             |
+| 2               | Deploy blueprint          | 10 min            |
+| 2               | Set environment variables | 2 min             |
+| 2               | WordPress setup           | 5 min             |
+| 3               | Setup deploy hook         | 3 min             |
+| 3               | Test deployment           | 3 min             |
+| **TOTAL** | **All steps**       | **~37 min** |
 
 ---
 
@@ -562,21 +594,25 @@ By completing this project, you'll understand:
 Pick one of these options:
 
 ### Option A: Complete Beginner
+
 → Start with **STEP_BY_STEP_GUIDE.txt**
 → Follow all 21 steps in order
 → Takes ~30-40 minutes
 
 ### Option B: Some Experience
+
 → Use **STEP_BY_STEP_GUIDE.txt**
 → Skip explanations, focus on commands
 → Takes ~20-25 minutes
 
 ### Option C: Experienced Developer
+
 → Copy files from **wordpress-demo-files.md**
 → Use **QUICK START** at top of this file
 → Takes ~10-15 minutes
 
 ### Option D: Stuck Somewhere
+
 → Check **QUICK_REFERENCE.md**
 → Search for your issue
 → Find solution immediately
